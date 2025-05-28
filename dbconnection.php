@@ -2,7 +2,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = 'root';
-$database = 'sda_project';
+$database = 'uni_dash_db';
 
 $conn = new mysqli($host, $username, $password, $database);
 
