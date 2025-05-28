@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>Admin Panel</title>
+</head>
+<body>
+<div class="container">
+
+<!-- topbar -->
+    <div class="topbar">
+        <div class="logo">
+            <h2>University Dashboard</h2>
+        </div>
+<!-- searchbar -->
+        <div class="search">
+        <input type="text" id="search" placeholder="Serach Here">
+        <label for="search"> <i class="fa fa-search" ></i></label>
+    </div>
+    <i class="fa fa-bell"></i>
+    <div class="user">
+        <img src="imgnnn.png" alt="user">
+    </div>
+    </div>
+
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul>
+       
+            
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-th-large"></i>
+                    <div>Dashboard</div>
+                </a>
+            </li>
+        
+        
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-user-graduate"></i>
+                    <div>Students</div>
+                </a>
+            </li> 
+
+
+
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-chalkboard-teacher"></i>
+                    <div>Teachers </div>
+                </a>
+            </li> 
+
+
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-users"></i>
+                    <div>Employees</div>
+                </a>
+            </li> 
+       
+       
+
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-chart-bar"></i>
+                    <div>Analytics</div>
+                </a>
+            </li> 
+            
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-hand-holding-usd"></i>
+                    <div>Earnings</div>
+                </a>
+            </li> 
+       
+       
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-cog"></i>
+                    <div>Settings</div>
+                </a>
+            </li> 
+
+
+            <li>
+                <a  href="#">
+                    <i class=" fa fa-question"></i>
+                    <div>Help</div>
+                </a>
+            </li> 
+       
+        </ul>
+
+
+
+    </div>
+<!-- main -->
+    <div class="main">
+
+        <div class="cards">
+<!-- cards 1-->
+    
+
+
+      <div class="card">
+            <div class="card-content">
+
+                <div class="number earnings">0</div>
+                <div class="card-name">Earnings <!--<h1>(Past 12 Months)</h1>--></div>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-dollar-sign" ></i>
+            </div>
+        </div>
+   
+   
+   
+   
+
+
+<!-- card 2-->
+    <div class="card">
+            <div class="card-content">
+
+                <div class="number employees">0</div>
+                <div class="card-name">Employees</div>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-users" ></i>
+            </div>
+        </div>
+
+<!-- cards 3-->
+        <div class="card">
+            <div class="card-content">
+
+                <div class="number teachers">0</div>
+                <div class="card-name">Teachers</div>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-chalkboard-teacher" ></i>
+            </div>
+
+        </div>
+
+    
+
+
+        <!-- cards 4-->
+  
+            <div class="card">
+            <div class="card-content">
+
+                <div class="number students">0</div>
+                <div class="card-name">Students</div>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-user-graduate" ></i>
+            </div>
+
+        </div>
+   
+   
+   
+   
+    </div>
+
+
+
+
+<!-- charts -->
+        <div class="charts"> 
+            <div class="chart" id="line-chart">
+                <h2>Earnings (Past 12 Months)</h2>
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart" id="doughnut-chart">
+                <h2>Employees</h2>
+                <canvas id="doughnut"></canvas>
+            </div>         
+
+            <div class="chart" id="bar-chart">
+                <h2>Teachers</h2>
+                <canvas id="bar"></canvas>
+            </div>         
+
+            <div class="chart"id="pie-chart">
+                <h2>Students</h2>
+                <canvas id="pie"></canvas>
+            </div>         
+          
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+<script src="chart1.js"></script>
+<script src="chart2.js"></script>
+<script src="chart3.js"></script>
+<script src="chart4.js"></script>
+<script src="cards.js"></script>
+</body>
+
+
+
+
+</html>
