@@ -11,7 +11,8 @@ foreach ($tables as $table) {
     $data[$table] = $row['count'];
 }
 
-$result = $conn->query("SELECT SUM(amount) as total FROM earnings");
+$year=2024;
+$result = $conn->query("SELECT SUM(amount) as total FROM earnings where year = $year");
 $row = $result->fetch_assoc();
 $data['earnings'] = $row['total'];
 
